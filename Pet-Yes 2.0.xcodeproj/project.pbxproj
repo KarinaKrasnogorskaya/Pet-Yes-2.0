@@ -11,6 +11,8 @@
 		9A65CE8829C4CC5300B72006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65CE8729C4CC5300B72006 /* ContentView.swift */; };
 		9A65CE8A29C4CC5400B72006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A65CE8929C4CC5400B72006 /* Assets.xcassets */; };
 		9A65CE8D29C4CC5400B72006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A65CE8C29C4CC5400B72006 /* Preview Assets.xcassets */; };
+		9A65CE9429C4CED000B72006 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65CE9329C4CED000B72006 /* OnboardingModel.swift */; };
+		9A65CE9629C4D07B00B72006 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65CE9529C4D07B00B72006 /* OnboardingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		9A65CE8729C4CC5300B72006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A65CE8929C4CC5400B72006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A65CE8C29C4CC5400B72006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A65CE9329C4CED000B72006 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		9A65CE9529C4D07B00B72006 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		9A65CE8429C4CC5300B72006 /* Pet-Yes 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				9A65CE9329C4CED000B72006 /* OnboardingModel.swift */,
+				9A65CE9529C4D07B00B72006 /* OnboardingPage.swift */,
 				9A65CE8529C4CC5300B72006 /* Pet_Yes_2_0App.swift */,
 				9A65CE8729C4CC5300B72006 /* ContentView.swift */,
 				9A65CE8929C4CC5400B72006 /* Assets.xcassets */,
@@ -139,6 +145,8 @@
 			files = (
 				9A65CE8829C4CC5300B72006 /* ContentView.swift in Sources */,
 				9A65CE8629C4CC5300B72006 /* Pet_Yes_2_0App.swift in Sources */,
+				9A65CE9429C4CED000B72006 /* OnboardingModel.swift in Sources */,
+				9A65CE9629C4D07B00B72006 /* OnboardingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
