@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Page: Identifiable {
+struct Page: Identifiable, Equatable {
     var id = UUID()
     var name: String
     var description: String

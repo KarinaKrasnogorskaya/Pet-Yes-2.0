@@ -55,10 +55,9 @@
 		9A65CE8429C4CC5300B72006 /* Pet-Yes 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				9A65CE9329C4CED000B72006 /* OnboardingModel.swift */,
-				9A65CE9529C4D07B00B72006 /* OnboardingPage.swift */,
 				9A65CE8529C4CC5300B72006 /* Pet_Yes_2_0App.swift */,
 				9A65CE8729C4CC5300B72006 /* ContentView.swift */,
+				9A65CEB129C8C00D00B72006 /* OnboardingScreen */,
 				9A65CE8929C4CC5400B72006 /* Assets.xcassets */,
 				9A65CE8B29C4CC5400B72006 /* Preview Content */,
 			);
@@ -71,6 +70,15 @@
 				9A65CE8C29C4CC5400B72006 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A65CEB129C8C00D00B72006 /* OnboardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9A65CE9329C4CED000B72006 /* OnboardingModel.swift */,
+				9A65CE9529C4D07B00B72006 /* OnboardingPage.swift */,
+			);
+			path = OnboardingScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
