@@ -21,6 +21,7 @@ struct OnboardingPage: View {
                 .font(.subheadline)
                 .frame(maxWidth: .infinity)
                 
+                
             
         }
     }

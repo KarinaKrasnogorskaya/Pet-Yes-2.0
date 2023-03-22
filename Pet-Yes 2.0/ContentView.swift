@@ -14,38 +14,37 @@ struct ContentView: View {
     
     
     var body: some View {
-        TabView(selection: $pageIndex) {
-            ForEach(pages) { page in
-                VStack {
-                    Spacer()
-                    OnboardingPage(page: page)
-                    Spacer()
-                    if page == pages.last {
-                        Button("Sign Up", action: goToZero)
-                            .buttonStyle(.bordered)
-                    } else {
-                        Button("Next", action: incrementPage)
+        NavigationStack {
+            TabView(selection: $pageIndex) {
+                ForEach(pages) { page in
+                    VStack {
+                        Spacer()
+                        OnboardingPage(page: page)
+                        Spacer()
+                        if page == pages.last {
+                            NavigationLink("Sign Up") {
+                                MainScreen()
+                            }
+                        } else {
+                            Button("Next", action: incrementPage)
+                        }
+                        Spacer()
                     }
-                    Spacer()
+                    .tag(page.tag)
                 }
-                .tag(page.tag)
             }
-        }
-        .animation(.easeInOut, value: pageIndex)
-        .tabViewStyle(.page)
-        .indexViewStyle(.page(backgroundDisplayMode: .interactive))
-        .onAppear {
-            dotAppearence.currentPageIndicatorTintColor = .black
-            dotAppearence.pageIndicatorTintColor = .gray
+            .animation(.easeInOut, value: pageIndex)
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+            .onAppear {
+                dotAppearence.currentPageIndicatorTintColor = .black
+                dotAppearence.pageIndicatorTintColor = .gray
+            }
         }
     }
     
     func incrementPage() {
         pageIndex += 1
-    }
-    
-    func goToZero() {
-        pageIndex = 0
     }
 }
 
