@@ -18,6 +18,7 @@
 		9A6D2DF029CB610F00B65198 /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D2DEF29CB610F00B65198 /* TabData.swift */; };
 		9A6D2DF229CB659A00B65198 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D2DF129CB659A00B65198 /* TabBar.swift */; };
 		9A6D2DF429CB675900B65198 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D2DF329CB675900B65198 /* MainScreen.swift */; };
+		9AA9415529CC90EC002CB381 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9415429CC90EC002CB381 /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9A6D2DEF29CB610F00B65198 /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
 		9A6D2DF129CB659A00B65198 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9A6D2DF329CB675900B65198 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		9AA9415429CC90EC002CB381 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +67,13 @@
 		9A65CE8429C4CC5300B72006 /* Pet-Yes 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				9AA9415629CC9E44002CB381 /* Views */,
 				9A6D2DEE29CB60FD00B65198 /* Data */,
 				9A65CE8529C4CC5300B72006 /* Pet_Yes_2_0App.swift */,
 				9A65CE8729C4CC5300B72006 /* ContentView.swift */,
 				9A6D2DEC29CB60A700B65198 /* CustomTabBar.swift */,
 				9A6D2DF129CB659A00B65198 /* TabBar.swift */,
-				9A6D2DF329CB675900B65198 /* MainScreen.swift */,
+				9AA9415429CC90EC002CB381 /* NavigationBar.swift */,
 				9A6D2DE929CB43CC00B65198 /* Button */,
 				9A65CEB129C8C00D00B72006 /* OnboardingScreen */,
 				9A65CE8929C4CC5400B72006 /* Assets.xcassets */,
@@ -110,6 +113,14 @@
 				9A6D2DEF29CB610F00B65198 /* TabData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		9AA9415629CC9E44002CB381 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A6D2DF329CB675900B65198 /* MainScreen.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				9A65CE8629C4CC5300B72006 /* Pet_Yes_2_0App.swift in Sources */,
 				9A6D2DF229CB659A00B65198 /* TabBar.swift in Sources */,
 				9A6D2DEB29CB43F000B65198 /* StandartButton.swift in Sources */,
+				9AA9415529CC90EC002CB381 /* NavigationBar.swift in Sources */,
 				9A65CE9429C4CED000B72006 /* OnboardingModel.swift in Sources */,
 				9A6D2DF429CB675900B65198 /* MainScreen.swift in Sources */,
 				9A6D2DED29CB60A700B65198 /* CustomTabBar.swift in Sources */,
