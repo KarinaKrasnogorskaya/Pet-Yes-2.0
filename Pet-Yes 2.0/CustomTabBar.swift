@@ -89,9 +89,9 @@ struct CustomTabBar: View {
     }
 }
 
-struct CustomTabBar_Previews: PreviewProvider {
+/* struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+       ContentView()
     }
-}
+} */
 
