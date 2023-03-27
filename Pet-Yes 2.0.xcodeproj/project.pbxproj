@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9A283E3629CCB53500E8D928 /* ArticlesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A283E3529CCB53500E8D928 /* ArticlesScreen.swift */; };
-		9A283E3829CCB80700E8D928 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A283E3729CCB80700E8D928 /* SearchBar.swift */; };
-		9A283E3C29CCD1AE00E8D928 /* SectionArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A283E3B29CCD1AE00E8D928 /* SectionArticle.swift */; };
+		9A283E3829CCB80700E8D928 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A283E3729CCB80700E8D928 /* CustomSearchBar.swift */; };
+		9A283E3C29CCD1AE00E8D928 /* ArticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A283E3B29CCD1AE00E8D928 /* ArticalCell.swift */; };
 		9A283E3E29CCDEB400E8D928 /* ModelArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A283E3D29CCDEB400E8D928 /* ModelArticles.swift */; };
+		9A35D52E29D1CCB600030030 /* ArticalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35D52D29D1CCB600030030 /* ArticalDetailView.swift */; };
+		9A35D53029D1DBAA00030030 /* ArticalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A35D52F29D1DBAA00030030 /* ArticalListViewModel.swift */; };
 		9A65CE8629C4CC5300B72006 /* Pet_Yes_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65CE8529C4CC5300B72006 /* Pet_Yes_2_0App.swift */; };
 		9A65CE8829C4CC5300B72006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65CE8729C4CC5300B72006 /* ContentView.swift */; };
 		9A65CE8A29C4CC5400B72006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A65CE8929C4CC5400B72006 /* Assets.xcassets */; };
@@ -27,9 +29,11 @@
 
 /* Begin PBXFileReference section */
 		9A283E3529CCB53500E8D928 /* ArticlesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesScreen.swift; sourceTree = "<group>"; };
-		9A283E3729CCB80700E8D928 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		9A283E3B29CCD1AE00E8D928 /* SectionArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionArticle.swift; sourceTree = "<group>"; };
+		9A283E3729CCB80700E8D928 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		9A283E3B29CCD1AE00E8D928 /* ArticalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalCell.swift; sourceTree = "<group>"; };
 		9A283E3D29CCDEB400E8D928 /* ModelArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelArticles.swift; sourceTree = "<group>"; };
+		9A35D52D29D1CCB600030030 /* ArticalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalDetailView.swift; sourceTree = "<group>"; };
+		9A35D52F29D1DBAA00030030 /* ArticalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalListViewModel.swift; sourceTree = "<group>"; };
 		9A65CE8229C4CC5300B72006 /* Pet-Yes 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet-Yes 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A65CE8529C4CC5300B72006 /* Pet_Yes_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_Yes_2_0App.swift; sourceTree = "<group>"; };
 		9A65CE8729C4CC5300B72006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,13 +82,15 @@
 				9AA9415629CC9E44002CB381 /* Views */,
 				9A6D2DEE29CB60FD00B65198 /* Data */,
 				9A65CE8529C4CC5300B72006 /* Pet_Yes_2_0App.swift */,
+				9A35D52F29D1DBAA00030030 /* ArticalListViewModel.swift */,
 				9A65CE8729C4CC5300B72006 /* ContentView.swift */,
 				9A6D2DEC29CB60A700B65198 /* CustomTabBar.swift */,
-				9A283E3B29CCD1AE00E8D928 /* SectionArticle.swift */,
+				9A283E3B29CCD1AE00E8D928 /* ArticalCell.swift */,
+				9A35D52D29D1CCB600030030 /* ArticalDetailView.swift */,
 				9A6D2DF129CB659A00B65198 /* TabBar.swift */,
 				9A283E3D29CCDEB400E8D928 /* ModelArticles.swift */,
 				9AA9415429CC90EC002CB381 /* NavigationBar.swift */,
-				9A283E3729CCB80700E8D928 /* SearchBar.swift */,
+				9A283E3729CCB80700E8D928 /* CustomSearchBar.swift */,
 				9A6D2DE929CB43CC00B65198 /* Button */,
 				9A65CEB129C8C00D00B72006 /* OnboardingScreen */,
 				9A65CE8929C4CC5400B72006 /* Assets.xcassets */,
@@ -208,15 +214,17 @@
 				9A283E3629CCB53500E8D928 /* ArticlesScreen.swift in Sources */,
 				9A6D2DF029CB610F00B65198 /* TabData.swift in Sources */,
 				9A65CE8829C4CC5300B72006 /* ContentView.swift in Sources */,
+				9A35D52E29D1CCB600030030 /* ArticalDetailView.swift in Sources */,
 				9A65CE8629C4CC5300B72006 /* Pet_Yes_2_0App.swift in Sources */,
 				9A6D2DF229CB659A00B65198 /* TabBar.swift in Sources */,
-				9A283E3C29CCD1AE00E8D928 /* SectionArticle.swift in Sources */,
+				9A283E3C29CCD1AE00E8D928 /* ArticalCell.swift in Sources */,
 				9A283E3E29CCDEB400E8D928 /* ModelArticles.swift in Sources */,
-				9A283E3829CCB80700E8D928 /* SearchBar.swift in Sources */,
+				9A283E3829CCB80700E8D928 /* CustomSearchBar.swift in Sources */,
 				9A6D2DEB29CB43F000B65198 /* StandartButton.swift in Sources */,
 				9AA9415529CC90EC002CB381 /* NavigationBar.swift in Sources */,
 				9A65CE9429C4CED000B72006 /* OnboardingModel.swift in Sources */,
 				9A6D2DF429CB675900B65198 /* MainScreen.swift in Sources */,
+				9A35D53029D1DBAA00030030 /* ArticalListViewModel.swift in Sources */,
 				9A6D2DED29CB60A700B65198 /* CustomTabBar.swift in Sources */,
 				9A65CE9629C4D07B00B72006 /* OnboardingPage.swift in Sources */,
 			);

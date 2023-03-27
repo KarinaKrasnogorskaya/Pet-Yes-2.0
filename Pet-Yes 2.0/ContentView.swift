@@ -24,7 +24,9 @@ struct ContentView: View {
                         Spacer()
                         if page == pages.last {
                             NavigationLink("Sign Up") {
-                                ArticlesScreen(articles: articles)
+                                NavigationView {
+                                    ArticlesScreen( articles: articles)
+                                }
                             }
                         } else {
                             Button("Next", action: incrementPage)

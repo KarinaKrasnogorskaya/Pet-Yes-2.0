@@ -17,37 +17,40 @@ struct ArticleCell: View {
     let article: Article
     
     var body: some View {
-        VStack(alignment: .center) {
-            Image(article.image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame( height: 200)
-                .cornerRadius(10)
-                .padding(.top, 10)
-            
-            Text(article.date)
-                .font(.caption)
-                .foregroundColor(.gray)
-                .padding(.top, 8)
-            
-            Text(article.title)
-                .font(.title2)
-                .fontWeight(.semibold)
-                .padding(.top, 8)
-            
-            Text(article.description)
-                .font(.body)
-                .foregroundColor(.gray)
-                .padding(.top, 8)
-                .lineLimit(nil)
+        
+        NavigationLink(destination: ArticalDetailView(article: article)) {
+            VStack(alignment: .center) {
+                Image(article.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame( height: 200)
+                    .cornerRadius(10)
+                    .padding(.top, 10)
+                
+                Text(article.date)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .padding(.top, 8)
+                
+                Text(article.title)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .padding(.top, 8)
+                
+                Text(article.description)
+                    .font(.body)
+                    .foregroundColor(.gray)
+                    .padding(.top, 8)
+                    .lineLimit(nil)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(radius: 5)
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
-        .background(Color.white)
-               .cornerRadius(10)
-               .shadow(radius: 5)
+        
     }
-    
 }
 
 
